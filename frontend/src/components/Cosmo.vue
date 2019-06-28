@@ -74,16 +74,18 @@
         font-weight: 500;
 }
     .tableBtn {
-        color: black;
+        color: darkblue;
         border: none;
         font-weight: bold;
         vertical-align: bottom;
         padding: 0;
         background: none;
 }
+  
+
     .tableBtn:hover {
         background: none;
-        color: black;
+        color: gray;
 }
       .icon {
         width: 25px;
@@ -97,6 +99,25 @@
 
     #mainBlock {
         min-height: 93vh;
+}
+
+    tr {
+       cursor: pointer;
+}
+    tr:hover {
+        background-color: rgba(0, 0, 50, 0.08);
+}
+
+    .table-striped tbody tr:nth-of-type(2n+1):hover {
+        background-color: rgba(0, 0, 50, 0.08);
+}
+    
+
+    #headTable {
+        cursor: default;
+} 
+    #headTable:hover {
+        background: none;
 }
 
     @media screen and (max-width: 800px) {
@@ -115,11 +136,18 @@
             top: 15vh;
             left: 1vh;
             width: 98vw;
+        }      
+        
+        .btnTable {
+            display: none;
         }
-        
-        
     }
+        
+        
+        
+    
 
+      
 </style>
 <template>
     <div class="container" v-bind:class="{modalBackground: showModal}" id="page">
@@ -147,7 +175,7 @@
         <h1 class="nadpis">Výpis kosmonautů</h1>
         <table class="table table-striped">
             <thead>
-            <tr>
+            <tr id="headTable">
                 <th scope="col" >Jméno</th><th scope="col" >
                     <button @click="sortKosmo('prijmeni')" class=" tableBtn ">Přijmení <v-icon v-if="sort == 'prijmeni' " name="chevron-up"></v-icon>  <v-icon v-if="sort == 'prijmeni DESC' " name="chevron-down"></v-icon></button></th>
                 <th scope="col" ><button @click="sortKosmo('superschopnost')" class="tableBtn">Superschopnost <v-icon v-if="sort == 'superschopnost' " name="chevron-up"></v-icon><v-icon v-if="sort == 'superschopnost DESC' " name="chevron-down"></v-icon></button></th>
@@ -155,7 +183,7 @@
             </tr>
             </thead>
             <tbody v-if="filter == ''">
-            <tr v-for="kosmonaut in kosmo"  scope="row">
+            <tr v-for="kosmonaut in kosmo"  scope="row" @click="editovat( kosmonaut.idCosmo )">
             <td>
                    {{kosmonaut.jmeno}}
             </td>
@@ -170,7 +198,7 @@
             </td>  
             
             <td>
-                <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info" >Editovat</button>
+                <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnTable" >Editovat</button>
             </td> 
         </tr>
         
@@ -191,7 +219,7 @@
             </td>  
             
             <td>
-                <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info" >Editovat</button>
+                <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnTable" >Editovat</button>
             </td> 
         </tr>
         
