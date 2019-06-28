@@ -82,7 +82,6 @@
     },
             methods: {
                 deleteKosmo() {
-                    console.log(this.$parent.id);
                     this.$http.post('del' , {
                     id: this.$parent.id
                     

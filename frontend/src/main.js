@@ -11,7 +11,7 @@ Vue.use(feather, 'v-icon')
 Vue.use(BootstrapVue);
 
 const axios = Axios.create();
-axios.defaults.baseURL = 'http://localhost:8012/cosmo/public/';
+axios.defaults.baseURL = 'http://cosmo.tode.cz/public/';
 
 Vue.prototype.$http = axios;
 

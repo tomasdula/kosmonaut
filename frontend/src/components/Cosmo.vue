@@ -95,10 +95,36 @@
         visibility: hidden;
 }
 
+    #mainBlock {
+        min-height: 93vh;
+}
+
+    @media screen and (max-width: 800px) {
+        #page {
+            max-width: 100vw;
+            
+        }
+        
+        .MainForm {
+            position: relative;
+            left: 10%;
+        }
+        
+        .modal-container {
+            position: absolute;
+            top: 15vh;
+            left: 1vh;
+            width: 98vw;
+        }
+        
+        
+    }
+
 </style>
 <template>
     <div class="container" v-bind:class="{modalBackground: showModal}" id="page">
-        <hlavicka></hlavicka>
+    <div id="mainBlock">
+                <hlavicka></hlavicka>
     <div class="container"  >
         <modal v-if="showModal" @close="showModal = false">
     <!--
@@ -111,7 +137,9 @@
         
         
         <add-cosmo v-if="showAdd" v-bind:class="{hiden: showModal}"></add-cosmo>
-        <div class="row container" v-if="!(showAdd)" v-bind:class="{hiden: showModal}" id="mainMenu"><button class="btn btn-primary btn-block col-3" @click="showAdd = true">Nový záznam</button>
+        
+        <div class="row container" v-if="!(showAdd)" v-bind:class="{hiden: showModal}" id="mainMenu">
+            <button class="btn btn-primary btn-block col-3" @click="showAdd = true">Nový záznam</button>
             <form class="form-inline my-2 my-lg-0 MainForm">
                 <label class='col' id='labelNajit'>Najít:</label> <input class="form-control mr-sm-2" type="search" placeholder="Najít" v-model="filter" aria-label="Search">
       
@@ -170,7 +198,7 @@
             </tbody>
         </table>
         </div>
-
+    </div>
     <patka></patka>
     </div>
 </template>
@@ -212,13 +240,11 @@
                     this.sort = sortBy;
                     rank ='ASC';
                 }
-                console.log(this.sort);
                 this.$http.get('kosmonauti/' + sortBy + '/' + rank).then((response) => {
                     this.kosmo = response.data;
                 });
             }
         }, updated() {
-                console.log('ted');
             },
         components: {
                'modal': Modal,
