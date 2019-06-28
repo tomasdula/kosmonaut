@@ -1,6 +1,6 @@
-# chat-ct-09
+# kosmonaut app
 
-> chat frontend
+> kosmonaut frontend
 
 ## Build Setup
 
