@@ -18,15 +18,27 @@ class Kosmo extends Model {
         $stmt->execute();
         return $stmt->fetchAll();
     }
-    
-    function getAllSorted($sort, $typ) {
+
+    function getAllFrom($from) {
+        $stmt = $this->db->query("SELECT * FROM kosmonaut LIMIT 20 OFFSET $from");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+    function countRows() {
+        $stmt = $this->db->query("SELECT COUNT(*) FROM kosmonaut");
+        $stmt->execute();
+        return $stmt->fetch();
+    }
+
+    function getAllSorted($sort, $typ, $from) {
         if (strtolower($typ) == 'desc') {
-        $stmt = $this->db->query("SELECT * FROM kosmonaut ORDER BY lower($sort) DESC");
+            $stmt = $this->db->query("SELECT * FROM kosmonaut ORDER BY lower($sort) DESC LIMIT 20 OFFSET $from");
         } else {
-            $stmt = $this->db->query("SELECT * FROM kosmonaut ORDER BY lower($sort) ASC");
+            $stmt = $this->db->query("SELECT * FROM kosmonaut ORDER BY lower($sort) ASC LIMIT 20 OFFSET $from");
         }
         $stmt->execute();
-        
+
         return $stmt->fetchAll();
     }
 

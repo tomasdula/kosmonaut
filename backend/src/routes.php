@@ -12,9 +12,9 @@ return function (App $app) {
         date_default_timezone_set('Europe/Prague');
 
         $now = new DateTime("now");
-        $rm = new Kosmo($this->db);
+        $model = new Kosmo($this->db);
         try {
-            $data = $rm->getAll();
+            $data = $model->getAll();
             for ($i = 0; $i < sizeof($data); $i++) {
                 $birth = $data[$i]['datum_narozeni'];
                 $age = DateTime::createFromFormat('Y-m-d', $birth)->diff($now)->y;
@@ -27,9 +27,48 @@ return function (App $app) {
         }
     });
 
-    $app->get('/kosmonauti/{sort}/{typ}', function (Request $request, Response $response, array $args) {
+    $app->get('/rows', function (Request $request, Response $response, array $args) {
+        $model = new Kosmo($this->db);
+        try {
+            $data = $model->countRows();
+            $data["radku"] = $data["COUNT(*)"];
+            unset($data["COUNT(*)"]);
+            return $response->withJson($data);
+        } catch (Exception $ex) {
+            $this->logger->error($ex->getMessage());
+            return $response->withStatus(501);
+        }
+    });
+
+    $app->get('/kosmonauti/{ofset}', function (Request $request, Response $response, array $args) {
+        $inputArgs = $args['ofset'];
+        $from = intval($inputArgs);
+
+        date_default_timezone_set('Europe/Prague');
+
+        $now = new DateTime("now");
+        $model = new Kosmo($this->db);
+        try {
+            $data = $model->getAllFrom($from);
+            for ($i = 0; $i < sizeof($data); $i++) {
+                $birth = $data[$i]['datum_narozeni'];
+                $age = DateTime::createFromFormat('Y-m-d', $birth)->diff($now)->y;
+                $data[$i]['vek'] = $age;
+            }
+            return $response->withJson($data);
+        } catch (Exception $ex) {
+            $this->logger->error($ex->getMessage());
+            return $response->withStatus(501);
+        }
+    });
+
+
+
+    $app->get('/kosmonauti/{sort}/{typ}/{ofset}', function (Request $request, Response $response, array $args) {
         $by = $args['sort'];
         $typ = $args['typ'];
+        $inputArgs = $args['ofset'];
+        $from = intval($inputArgs);
         if (strtolower($typ) == 'desc' || strtolower($typ) == 'asc') {
             if ($by == 'vek') {
                 $by = "datum_narozeni";
@@ -37,9 +76,9 @@ return function (App $app) {
             date_default_timezone_set('Europe/Prague');
             $now = new DateTime("now");
             try {
-                $rm = new Kosmo($this->db);
+                $model = new Kosmo($this->db);
 
-                $data = $rm->getAllSorted($by, $typ);
+                $data = $model->getAllSorted($by, $typ, $from);
 
                 for ($i = 0; $i < sizeof($data); $i++) {
                     $birth = $data[$i]['datum_narozeni'];
