@@ -97,6 +97,7 @@
         visibility: hidden;
 }
 
+    
     #mainBlock {
         min-height: 93vh;
 }
@@ -120,7 +121,16 @@
         background: none;
 }
 
-    @media screen and (max-width: 800px) {
+    .labelMain {
+        color: #444444;
+        text-align: right;
+}
+
+    .mobileVypis  {
+        display: none;
+}
+
+    @media screen and (max-width: 800px) and (min-width: 650px) {
         #page {
             max-width: 100vw;
             
@@ -138,8 +148,45 @@
             width: 98vw;
         }      
         
-        .btnTable {
+        
+    }
+    
+    @media screen and (max-width: 650px) {
+         #page {
+            max-width: 100vw;
+            
+        }
+        
+        .MainForm {
+            position: relative;
+            left: 10%;
+        }
+        
+        .modal-container {
+            position: absolute;
+            top: 15vh;
+            left: 1vh;
+            width: 98vw;
+        }  
+        
+        .mobileVypis {
+            display: block;
+            border: 1px solid lightblue;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px  3px 3px #888888;
+        }
+        
+        .table-striped {
             display: none;
+        }
+        
+        .btnBox {
+            margin-left: 5em;
+         
         }
     }
         
@@ -225,6 +272,32 @@
         
             </tbody>
         </table>
+        
+        
+        <div class="container mobileVypis" v-if="filter == ''"  v-for="kosmonaut in kosmo" @click="editovat( kosmonaut.idCosmo )">
+          
+                
+           
+             
+            <div class="row"><label class="col-3 labelMain">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-3 labelMain labelMain">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+          
+            <div class="row"><label class="col-3 labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div><label class="col-3 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
+           
+                      
+            <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnBox" >Editovat</button>
+        </div> 
+        
+        <div v-if='filter != ""' >
+        <div class="container mobileVypis" v-for="kosmonaut in kosmo" v-if='kosmonaut.jmeno.toLowerCase().includes(filter.toLowerCase())  || kosmonaut.prijmeni.toLowerCase().includes(filter.toLowerCase()) || kosmonaut.superschopnost.toLowerCase().includes(filter.toLowerCase())' @click="editovat( kosmonaut.idCosmo )">
+                    
+            <div class="row"><label class="col-3 labelMain">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-3 labelMain labelMain">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+          
+            <div class="row"><label class="col-3 labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div><label class="col-3 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
+           
+                      
+            <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnBox" >Editovat</button>
+        </div> 
+        </div>
         </div>
     </div>
     <patka></patka>
