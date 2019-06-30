@@ -123,7 +123,7 @@
 
     .labelMain {
         color: #444444;
-        text-align: right;
+        
 }
 
     .mobileVypis  {
@@ -152,6 +152,10 @@
     }
     
     @media screen and (max-width: 650px) {
+        #labelNajit{
+            text-align: left;
+        }
+        
          #page {
             max-width: 100vw;
             
@@ -276,13 +280,11 @@
         
         <div class="container mobileVypis" v-if="filter == ''"  v-for="kosmonaut in kosmo" @click="editovat( kosmonaut.idCosmo )">
           
-                
-           
-             
-            <div class="row"><label class="col-3 labelMain">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-3 labelMain labelMain">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+            <div class="row"><label class="col-3 labelMain" style="text-align:right">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-2 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
+               
           
-            <div class="row"><label class="col-3 labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div><label class="col-3 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
-           
+            <div class="row"> <label class="col-3 labelMain" style="text-align:right"">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+            <div class="row"> <label class="col labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div></div>
                       
             <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnBox" >Editovat</button>
         </div> 
@@ -290,9 +292,12 @@
         <div v-if='filter != ""' >
         <div class="container mobileVypis" v-for="kosmonaut in kosmo" v-if='kosmonaut.jmeno.toLowerCase().includes(filter.toLowerCase())  || kosmonaut.prijmeni.toLowerCase().includes(filter.toLowerCase()) || kosmonaut.superschopnost.toLowerCase().includes(filter.toLowerCase())' @click="editovat( kosmonaut.idCosmo )">
                     
-            <div class="row"><label class="col-3 labelMain">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-3 labelMain labelMain">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+            <div class="row"><label class="col-3 labelMain" style="text-align:right">Jmeno:</label><div class="col" >{{kosmonaut.jmeno}}</div><label class="col-2 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
+               
           
-            <div class="row"><label class="col-3 labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div><label class="col-3 labelMain">Věk:</label><div class="col"> {{kosmonaut.vek}} </div></div>
+            <div class="row"> <label class="col-3 labelMain" style="text-align:right">Příjmení:</label> <div class="col">{{kosmonaut.prijmeni}}</div></div>
+            <div class="row"> <label class="col labelMain">Superschopnost:</label>   <div class="col"> {{kosmonaut.superschopnost}} </div></div>
+        </div>
            
                       
             <button @click="editovat( kosmonaut.idCosmo )"  type="button" class="btn btn-info btnBox" >Editovat</button>
