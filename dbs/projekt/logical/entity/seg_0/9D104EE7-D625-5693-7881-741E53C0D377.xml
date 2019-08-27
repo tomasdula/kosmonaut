@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D104EE7-D625-5693-7881-741E53C0D377" name="misto">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:02 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="umisteni" id="89B9E666-CAA2-B5B7-1EC4-A55DF840294C">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:15 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlasnosti" id="6CBDBDBA-B9D8-48E2-7990-3504B3E069E4">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:20 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zbozi" id="A39172D2-CCBF-FF43-42C4-2A997F8EED58">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:28 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlastnik" id="CA69227B-08A7-8EBC-4977-F6AC85CFCCBE">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:47 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="ED3C8DD4-0252-BF9A-FAD0-85BE2694FF12">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:12:52 UTC</createdTime>
+<generatorID>DD1F5F82-089C-29C7-9D1B-79E6262CA802</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<referedAttribute>B984C6EE-8268-3493-82C9-8251051D6034</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="BBBA49AF-6237-4215-BD02-D01E876254A0">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:13:44 UTC</createdTime>
+<generatorID>51DE65F9-2A08-666D-51EA-BAE1AC24C46D</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<referedAttribute>2F0FBE63-F3A9-2E22-1EC3-22B178306E34</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1588F14B-1DCC-40DE-8EEC-5F55A433C93B" name="misto PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:04:19 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>89B9E666-CAA2-B5B7-1EC4-A55DF840294C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

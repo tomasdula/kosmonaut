@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31566D41-5E1B-2974-3D4D-52630D44B88A" name="firma">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:02:23 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nazev" id="3F3A1A67-A55A-214F-C25E-F808C631F1CE">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:02:43 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kontakt" id="CA0A965D-3ABA-08F6-3C26-E5A82AF98BCA">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:02:54 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="D60323F4-D953-DE32-523F-EA1BC29A0139">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:03:48 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pozadavky" id="932BE036-8A52-3371-913F-5F299EE021CE">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:03:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DD16AE75-6B67-E302-1005-D481BE9C3987" name="firma PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:02:53 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F3A1A67-A55A-214F-C25E-F808C631F1CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

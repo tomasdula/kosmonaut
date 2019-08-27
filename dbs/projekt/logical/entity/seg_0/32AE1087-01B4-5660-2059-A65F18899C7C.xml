@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32AE1087-01B4-5660-2059-A65F18899C7C" name="Stat">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 20:58:29 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nazev" id="938068F3-4600-57E1-66D9-634BE054E5E1">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 20:58:44 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="0AD256D6-A09E-1641-01CD-93C75A7296F2">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 21:11:23 UTC</createdTime>
+<generatorID>2840E3A4-5743-A435-D3B6-C0CF9912BC2A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<referedAttribute>CA76C597-CDD4-C2CA-BD8E-C570FB72E5D9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4F0DBB1-5390-A5CE-10EF-047CA7B7492E" name="Stat PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-28 20:58:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="7DF7378A-55A2-371B-8A6D-6AC250DA254B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>938068F3-4600-57E1-66D9-634BE054E5E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

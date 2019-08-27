@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9257DD59-6EE9-4FEA-549A-B7306894623B" name="Firma">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:31:08 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nazev" id="38679582-81BF-AB02-720E-036AB6FEAF21">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:02:05 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="506E366F-0C10-1EFC-18C8-7A734922AE8F">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:02:10 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kontakt" id="F58A0608-702A-A8E4-561F-B63C0C1D2470">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:02:12 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="D21450D8-F4AC-3C20-B61F-E4316161D4D4">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:24:54 UTC</createdTime>
+<generatorID>1A22D1BB-F25E-1E78-1F14-2E5E8090CDAD</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>20E2588E-600D-99F0-1DDE-F2C72BC8AC83</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE3E1CB4-3A36-73C5-A0A4-4F2E24F7ADBF" name="Firma PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:02:09 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>38679582-81BF-AB02-720E-036AB6FEAF21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

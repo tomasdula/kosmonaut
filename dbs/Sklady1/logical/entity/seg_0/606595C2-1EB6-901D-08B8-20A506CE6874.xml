@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="606595C2-1EB6-901D-08B8-20A506CE6874" name="Miesto">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:30:44 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idMiesta" id="FF11C2FB-0E5D-4E70-ECBF-C27F83B8B484">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:00 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="block" id="D1CED059-CF02-4181-9284-CFB711C5EDF8">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:09 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patro" id="203C46DC-60FB-775E-2105-E27457F77433">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:13 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="teplota" id="0B309E77-D91A-6F6E-A767-02C43DB77BC1">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:16 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlkost" id="4B88D588-984E-C8BF-9284-1BE323E05785">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:19 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="svetelnost" id="095FC0E7-AE79-9873-33E3-D6CB281F636C">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:23 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idUlicky" id="D888F093-3C5E-4BEA-ADDA-799A75C5274A">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:14:43 UTC</createdTime>
+<generatorID>487B98E5-F086-58FD-EFFE-7A50D55AEDA2</generatorID>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>97CA09BC-11E6-7A97-D5E0-622B24878E1B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idBloku" id="E449B8AD-8AF9-DE0C-2CCE-03B53C8FF770">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-06 10:18:29 UTC</createdTime>
+<generatorID>929F8469-9428-E33C-7247-612EB22BCF47</generatorID>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>0E006FCC-3FC0-11DE-E4DA-F50E4ADCCC20</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EC714C62-5A1F-C356-D60E-931CBBE3BC0D" name="Miesto PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:12:06 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF11C2FB-0E5D-4E70-ECBF-C27F83B8B484</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_40" directorySegmentName="seg_0" id="C561D3FC-5C4B-DB9E-3887-2E1FA78199D3">
+<createdBy>xdula</createdBy>
+<createdTime>2016-03-02 16:20:31 UTC</createdTime>
+<ownerDesignName>Sklady1</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>09D94CD7-8780-8F43-356F-6715ED71A8EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3FE6B886-B38B-9284-77DE-5C7EA13A7365</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

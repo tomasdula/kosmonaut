@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D43524D-861F-EC3B-7F63-AAF7B11A7DE6" name="Nadradenosť">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:33:05 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rodne cislo" id="525F748F-9FE9-19E8-78E0-CA925D331443">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:04:44 UTC</createdTime>
+<generatorID>96AB18BA-FED2-281D-8F74-5CA267421598</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="6EAF73FB-13AC-A43D-98F8-522A7CE420FB">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:23:07 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo1" id="403F8F00-52DD-FA75-1DAC-C34431ABD412">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:01:58 UTC</createdTime>
+<generatorID>6907E3F9-4FC8-9A8B-1FB3-E927E79137D6</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo2" id="326C091E-12D0-D177-75DE-450643D5D38B">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:10:25 UTC</createdTime>
+<generatorID>184F122D-1ED6-0DBC-CE36-9C6A8178471C</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo3" id="359FAA63-CB85-0534-7242-AEDEC9B9BB09">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:14:21 UTC</createdTime>
+<generatorID>EA81CCC0-4AD8-3CB3-49C7-D682EBD87052</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo4" id="ADEA37F3-0883-7116-B6F4-BE7D804720C1">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:14:45 UTC</createdTime>
+<generatorID>06EA39BC-0EAE-9E7B-D289-16E444174EA4</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14944C2F-6310-422A-AFF5-DD1335F6C32C" name="Nadradenosť PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:23:10 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6EAF73FB-13AC-A43D-98F8-522A7CE420FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

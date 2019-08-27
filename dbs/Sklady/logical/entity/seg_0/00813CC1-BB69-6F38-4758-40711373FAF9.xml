@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00813CC1-BB69-6F38-4758-40711373FAF9" name="Spravna rada">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:33:25 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rodne cislo" id="2C5E5C39-B720-2A66-1766-E6819F050B66">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:01:58 UTC</createdTime>
+<generatorID>70F2A861-20A2-F154-1507-493F83E21587</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo1" id="6AC1207A-1099-ED42-1CFA-5C501FC5F0AB">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:10:35 UTC</createdTime>
+<generatorID>E396599B-EA2A-A5D9-8B3E-1D29D23E558A</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo2" id="3DB1B3ED-4C0F-E4D9-0D65-6B8C895D715C">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:10:56 UTC</createdTime>
+<generatorID>DCE33206-810B-8F36-DC5D-CFD3B11E9BEC</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

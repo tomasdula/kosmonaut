@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011DC200-FA51-D167-492A-71019F414E5B" name="Ulička">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:30:36 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B3EB35C2-653A-3B96-7082-0B9546B47A0C">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:00:21 UTC</createdTime>
+<generatorID>A08B10D8-1844-7265-1AA1-676360ECD6DF</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>4E88D224-70EC-A016-4885-B9EC1BD5677A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_2" id="97CA09BC-11E6-7A97-D5E0-622B24878E1B">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:13:59 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cislo" id="C03C6790-F795-9EBA-36E4-6D9806850B87">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:14:20 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sklad" id="3F4981A7-E35E-16D3-1EA2-59DF9917183B">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:14:38 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="547EA2DC-97F1-AE1C-2CF9-87596CF4DB04" name="Ulička PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:14:19 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97CA09BC-11E6-7A97-D5E0-622B24878E1B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

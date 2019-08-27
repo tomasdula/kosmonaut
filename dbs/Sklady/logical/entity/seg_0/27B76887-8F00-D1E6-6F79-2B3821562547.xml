@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="27B76887-8F00-D1E6-6F79-2B3821562547" name="Patro">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:31:11 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id1" id="7F13E2D8-80CD-7805-5587-F8130D19ABB6">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:16:30 UTC</createdTime>
+<generatorID>9BFCA8D4-6BF0-AE17-FB8B-5420E46C9115</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>FF11C2FB-0E5D-4E70-ECBF-C27F83B8B484</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_1" id="6176718E-B114-EF42-FE9C-997BA8BDDE7E">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:19:58 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cisloPatra" id="32BF5D73-204C-948F-42B5-8D680CFA0F36">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:20:00 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="69DA8E88-7202-E7F1-C3C8-327CC2F7F189">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:15:35 UTC</createdTime>
+<generatorID>E17FE6AC-CDF8-7E64-A5C4-BA7F5D5DEB79</generatorID>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>E0CE9951-CEF2-2F16-C3CD-BF14511E3B98</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14E3E71C-AF88-EDD9-014D-F65B5396DC2F" name="Patro PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:20:59 UTC</createdTime>
+<ownerDesignName>Sklady</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6176718E-B114-EF42-FE9C-997BA8BDDE7E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

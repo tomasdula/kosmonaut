@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="097290AA-12D0-C5DE-E29C-F1E5E324E29C" name="Opravnenie pre blok">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 14:31:16 UTC</createdTime>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F445B806-64F3-E82F-123C-CFD2D47DCB2A">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:27:38 UTC</createdTime>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_2" id="593BD0E1-964F-0D09-BEA8-253AE165C5D1">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:27:57 UTC</createdTime>
+<generatorID>5DBF2786-AC17-4C4F-31F8-ECE1F9EF486C</generatorID>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>A34BB096-E371-1445-E88E-DA4EB773CB47</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodne cislo" id="D7264E9F-D469-784A-7BCE-96E2CAC227DB">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:01:58 UTC</createdTime>
+<generatorID>3C412EAB-D970-62D6-74AF-84C70810D65B</generatorID>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>2F3FAE64-D595-30D6-DD73-49A7C5DFEE8D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_1" id="59063618-07D8-3B4E-B783-9632F9E4B8CA">
+<createdBy>Thom</createdBy>
+<createdTime>2016-03-02 14:01:58 UTC</createdTime>
+<generatorID>2B4447E1-6B8D-CD9D-91B5-757C842C9DDB</generatorID>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<referedAttribute>0E006FCC-3FC0-11DE-E4DA-F50E4ADCCC20</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E976822-5146-DA6A-F5A4-429F9AC191C5" name="Rozpis pre blok PK">
+<createdBy>Thom</createdBy>
+<createdTime>2016-02-29 15:27:46 UTC</createdTime>
+<ownerDesignName>dbs</ownerDesignName>
+<engineerTo>
+<item key="751C9634-D17B-1D5C-1127-24148331DAE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F445B806-64F3-E82F-123C-CFD2D47DCB2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
